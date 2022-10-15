@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로그램 호환 과제1. -20172207 오태훈</title>
+    <!-- 아이폰 계산기 테마로 조금 더 꾸며 보았습니다. -->
+</head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 250px;
+            height: 280px;
+            background-color: #5B5B5D;;
+        }
+        th, td {
+            font-size: 20pt;
+            text-align: center;
+            vertical-align: middle;
+            padding: 10px;
+            background-color: orange;
+        }
+        .result {
+            background-color: #5B5B5D;
+            height: 10px;
+        }
+        .zero_1 {
+            background-color: #5B5B5D;
+        }
+        input {
+            width: 242px;
+            font-size: 30px;
+            background-color: #5B5B5D;
+            text-align: right;
+            text-decoration: white;
+        }
+    </style>
+<body>
+    <table border="1">
+        <input type="text" value="0" class="text" disabled />
+        <tr>
+            <td colspan="3" class="result">AC</td>
+            <td>/</td>
+        </tr>
+        <tr>
+            <td class="zero_1">7</td>
+            <td class="zero_1">8</td>
+            <td class="zero_1">9</td>
+            <td>*</td>
+        </tr>
+        <tr>
+            <td class="zero_1">4</td>
+            <td class="zero_1">5</td>
+            <td class="zero_1">6</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="zero_1">1</td>
+            <td class="zero_1">2</td>
+            <td class="zero_1">3</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="zero_1">0</td>
+            <td class="zero_1">.</td>
+            <td>=</td>
+        </tr>
+    </table>
+</body>
+</html>

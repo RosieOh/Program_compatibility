@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 400px;
+                height: 280px;
+            }
+            th, td {
+                font-size: 20pt;
+                text-align: center;
+                vertical-align: middle;
+                padding: 10px;
+                background-color: #bbdefb;
+            }
+            .result {
+                background-color: #ffffff;
+                height: 100px;
+            }
+        </style>
+        <script>
+            function add_char(char) {
+                var out_str = document.getElementById("display");
+                out_str.value = out_str.value + char;
+            }
+            function disp_eval() {
+                var out_str = document.getElementById("display");
+                var result = eval(out_str.value);
+                out_str.value = out_str.value + "=" + result;
+            }
+        </script>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <td colspan="4" class="result">
+                    <input type="text" id="display" value="" size="50">
+                </td>
+            </tr>
+            <tr>
+                <td onclick="add_char('7');">7</td>
+                <td onclick="add_char('8');">8</td>
+                <td onclick="add_char('9');">9</td>
+                <td onclick="add_char('/');">/</td>
+            </tr>
+            <tr>
+                <td onclick="add_char('4');">4</td>
+                <td onclick="add_char('5');">5</td>
+                <td onclick="add_char('6');">6</td>
+                <td onclick="add_char('*');">*</td>
+            </tr>
+            <tr>
+                <td onclick="add_char('1');">1</td>
+                <td onclick="add_char('2');">2</td>
+                <td onclick="add_char('3');">3</td>
+                <td onclick="add_char('-');">-</td>
+            </tr>
+            <tr>
+                <td onclick="add_char('0');">0</td>
+                <td onclick="add_char('.');">.</td>
+                <td onclick="disp_eval();">=</td>
+                <td onclick="add_char('+');">+</td>
+            </tr>
+        </table>
+    </body>
+</html>
